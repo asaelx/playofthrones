@@ -1,0 +1,39 @@
+@keyframes topin
+    from
+        transform: translateY(-100%)
+    top
+        transform: translateY(0)
+
+#top
+    background: rgba($white, .05)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 3
+    &.scrolled
+        animation: topin .3s ease-in-out forwards
+        background: rgba($dark, .95)
+        box-shadow: 0 2px 6px 0 rgba($black, .3)
+        transition: all .3s ease-in-out
+    .logo
+        display: inline-block
+        margin-top: .5rem
+    #nav
+        float: right
+        padding: 1rem 0
+        +bp('max-width: 750px')
+            display: none
+        .menu
+            +clear
+            list-style: none
+            .option
+                float: left
+                margin-right: 2rem
+                &:last-child
+                    margin-right: 0
+                .link
+                    color: $white
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline

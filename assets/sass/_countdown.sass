@@ -1,0 +1,48 @@
+#countdown
+    text-align: center
+    padding: 5rem 0
+    background: url('../img/countdown-bg.jpg') no-repeat center center /  cover
+    position: relative
+    z-index: 1
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(rgba($light, .4), rgba($dark, 1))
+    .title
+        +font-size(28px)
+        font-weight: 500
+        color: $white
+        margin-bottom: 2rem
+        z-index: 1
+        position: relative
+    .clock
+        display: inline-block
+        width: auto
+        +bp('max-width: 669px')
+            zoom: .9
+        +bp('max-width: 606px')
+            zoom: .8
+        +bp('max-width: 541px')
+            zoom: .7
+        +bp('max-width: 480px')
+            zoom: .6
+        +bp('max-width: 417px')
+            zoom: .5
+        +bp('max-width: 355px')
+            zoom: .4
+        .flip-clock-label
+            +font-size(18px)
+            font-weight: 400
+            font-family: 'Montserrat', Arial, sans-serif
+            color: $white
+            text-transform: uppercase
+        .inn
+            background-color: $white
+            color: $orange
+            text-shadow: 0 1px 2px $dark-orange
+        .flip-clock-dot
+            background: $white
