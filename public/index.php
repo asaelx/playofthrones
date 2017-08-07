@@ -219,7 +219,7 @@
             <!-- /.row -->
             <div class="row">
                 <div class="col-12">
-                    <div class="by">Made with <span class="love">❤</span> by <a href="#" class="link">@asaelx</a></div>
+                    <div class="by">Made with <span class="love">❤</span> by <a href="http://asaelx.com/" class="link" target="_blank">@asaelx</a></div>
                     <!-- /.by -->
                 </div>
                 <!-- /.col-12 -->
